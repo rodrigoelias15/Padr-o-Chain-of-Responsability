@@ -1,6 +1,6 @@
 public class FuncionarioSetorCancelamento extends Funcionario{
     public FuncionarioSetorCancelamento(Funcionario superior) {
-        listaSolicitacoes.add(TipoSolicitacaoCancelamento.getTipoSolicitacaoReclamacao());
+        listaSolicitacoes.add(TipoSolicitacaoCancelamento.getTipoSolicitacaoCancelamento());
         setFuncionarioSuperior(superior);
     }
 

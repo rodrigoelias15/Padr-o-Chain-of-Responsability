@@ -14,13 +14,13 @@ public abstract class Funcionario {
 
     public abstract String getDescricaoCargo();
 
-    public String aceitarSolicitacao(Solicitacao solicitacao) {
+    public String atenderSolicitacao(Solicitacao solicitacao) {
         if (listaSolicitacoes.contains(solicitacao.getTipoSolicitacao())) {
             return getDescricaoCargo();
         }
         else {
             if (funcionarioSuperior != null) {
-                return funcionarioSuperior.aceitarSolicitacao(solicitacao);
+                return funcionarioSuperior.atenderSolicitacao(solicitacao);
             }
             else
             {
